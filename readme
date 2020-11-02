@@ -1,1 +1,17 @@
-Python3 3.6.9
+작업일지
+
+Prototype_001
+- Blog 앱을 생성해서 글제목, 글내용만 기본적으로 출력되게 작업함
+
+Prototype_002
+- Blog 앱에 디테일 좀 추가하고 html, css 살짝만 작업함
+- 게시글 제목 눌렀을때 글 Post/1, Post/2, Post/3 이런식으로 접속되게 작업함
+- Post/1, Post/2, Post/3 각각 들어갔을때 1,2,3 일대다 형식으로 Content 출력되게함
+
+Prototype_003
+- Common 앱을 생성해서 로그인 기능 구현함
+
+
+추가정보
+-Python: 3.6.6
+-Django: 1.11.5
