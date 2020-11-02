@@ -22,6 +22,7 @@ Including another URLconf
 
 from django.conf.urls import url
 from django.contrib import admin
+from django.conf.urls import include
 from blog.views import post_list, post_detail
 
 
@@ -30,4 +31,5 @@ urlpatterns = [
             url(r'^admin/', admin.site.urls),
             url(r'^$', post_list),
             url(r'^post/(?P<pk>\d+)/', post_detail),
+            url('common/', include('common.urls')),
             ]

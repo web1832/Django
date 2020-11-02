@@ -8,13 +8,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    <title>Che1's blog</title>
+    <title>Junja's Blog</title>
 </head>
 <body>
     <div class="header">
-            <h1>Che1's Blog!</h1>
-    </div>
-    <div class="recent">Recent Posts</div>
+		<h1><a href="/">Junja's Blog</a></h1>
+	</div>
+<ul class="nav navbar-nav navbar-right">
+  	{% if user.is_active %}
+  	<li><a href="">{{user.username}}</a></li>
+  	<li><a href="{% url 'common:logout' %}">로그아웃</a></li>
+  	{% else %}
+  	<li><a href="{% url 'common:login' %}"> 로그인</a></li>
+	 {% endif %}
+</ul>
+    
     {% block content %}
     {% endblock %}
 </body>
